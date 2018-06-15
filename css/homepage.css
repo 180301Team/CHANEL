@@ -40,3 +40,16 @@
 #carousel-example-generic .mask ul li a:hover {
   font-size: 30px;
 }
+footer ul {
+  list-style: none;
+  margin-right: 40px;
+  float: right;
+}
+footer ul li {
+  float: left;
+  margin: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #000;
+}
