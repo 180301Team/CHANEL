@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>demo</title>
+    <title>CHANEL</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
     <!-- meta:vp 移动端需要视口 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta:compat 设置当前页面以最优浏览器内核渲染 -->
@@ -81,5 +82,16 @@
 <script src="../bootstrap/js/jquery.min.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 <script>
-
+    $(window).scroll(function(){
+        if($(this).scrollTop()>50){
+            $('header').find('ul').slideUp();
+        }else{
+            $('header').find('ul').slideDown();
+        }
+        if(($(this).scrollTop()+$(window).height())==$('html').outerHeight()){
+            $('header').slideUp();
+        }else{
+            $('header').slideDown();
+        }
+    });
 </script>
